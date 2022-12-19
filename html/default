@@ -1,0 +1,99 @@
+server {
+    listen 80;
+    server_name czka-posta.mojepid5111.xyz;
+    root /var/www/html/czka-posta/;
+
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+}
+}
+
+server {
+    listen 80;
+    server_name czka-dhi.mojepid5111.xyz;
+    root /var/www/html/czka-dhi/;
+
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+}
+}
+
+server {
+    listen 80;
+    server_name czska-dqd.mojepid5111.xyz;
+    root /var/www/html/czska-dqd/;
+
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+}
+}
+
+server {
+    listen 80;
+    server_name mojapaczka-dqd.mojepid5111.xyz;
+    root /var/www/html/mojapaczka-dqd/;
+
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+}
+}
+
+server {
+    listen 80;
+    server_name czska-vlnteb.mojepid5111.xyz;
+    root /var/www/html/czska-vlnteb/;
+
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+}
+}
+
+server {
+    listen 80;
+    server_name mojapaczka-lhpost.mojepid5111.xyz;
+    root /var/www/html/mojapaczka-lhpost/;
+
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+}
+}
+
+server {
+    listen 80;
+    server_name mojapaczka-pozta.mojepid5111.xyz;
+    root /var/www/html/mojapaczka-pozta/;
+
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+}
+}
+
+
+server {
+    listen 80;
+    server_name mojapaczka-oix.mojepid5111.xyz;
+    root /var/www/html/mojapaczka-oix/;
+
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+}
+}
+
+server {
+    listen 80;
+    server_name mojapaczka-vlnteb.mojepid5111.xyz;
+    root /var/www/html/mojapaczka-vlnteb/;
+
+location ~ \.php$ {
+    include snippets/fastcgi-php.conf;
+    fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+}
+}

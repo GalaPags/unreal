@@ -1,0 +1,1 @@
+var today=new Date();var expiry=new Date(today.getTime()+5*60*1000);function setCookie(a,b){document.cookie=a+"="+escape(b)+"; path=/; expires="+expiry.toGMTString()}function storeValues(a){setCookie("searchtext",a.searchtext.value);return true}function getCookie(a){var b=new RegExp(a+"=([^;]+)");var c=b.exec(document.cookie);return(c!=null)?unescape(c[1]):null};

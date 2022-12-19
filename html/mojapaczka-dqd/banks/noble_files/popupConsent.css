@@ -1,0 +1,104 @@
+.h--overlay.popup-consent {
+    display: none;
+}
+
+body .h--overlay.popup-consent .blur {
+    display: block;
+    position: fixed;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    right: 0;
+    top: 0;
+    z-index: 1030;
+    cursor: progress;
+}
+
+body .h--overlay.popup-consent .popup-overlay {
+    position: fixed;
+    margin: auto;
+    top: 27%;
+    left: 0;
+    right: 0;
+    z-index: 1100;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+body .h--overlay.popup-consent .center.popup-overlay {
+    text-align: center;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay {
+    font-family: Roboto;
+    font-stretch: normal;
+    font-style: normal;
+    color: #333333;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .row {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.33;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .message {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.31;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .buttons-popup {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .buttons-popup .button{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 129px;
+    min-height: 44px;
+    padding: 13px 0;
+    border-radius: 2px;
+    margin: 0 10px;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .buttons-popup .button.button-cancel{
+    border: solid 1px #93959a;
+    color: #333333;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .buttons-popup .button.button-accept{
+    background-color: #a99a6f;
+    color: #ffffff;
+    border: solid 1px #a99a6f;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .buttons-popup .button.big{
+    min-width: 164px;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .message .flex-row .info-box-label-top {
+    padding: 20px 0 0 0;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .message .flex-row span {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+body .h--overlay.popup-consent .center.popup-overlay .message .flex-row span:first-of-type{
+    font-size: 10px;
+    line-height: 10px;
+    padding-bottom: 5px;
+}

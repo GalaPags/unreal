@@ -1,0 +1,290 @@
+/* getinbank */
+body[data-brand="getinbank"] .brand-color,
+body[data-brand="getinbank"] .info-box-label-top.brand-it span:nth-of-type(2),
+body[data-brand="getinbank"] .info-box-label-bottom.brand-it span:first-of-type {
+    color: #00b140;
+}
+
+body[data-brand="getinbank"] .brand-bg,
+body[data-brand="getinbank"].modern .ui-kit .ui-kit-element.brand-bg {
+    background-color: #00b140;
+    border-color: #00b140;
+    color: #fff;
+}
+
+body[data-brand="getinbank"] .brand-border{
+    border-color: #00b140;
+}
+
+body[data-brand="getinbank"] .brand-border-important{
+    border-color: #00b140 !important;
+}
+
+.ui-kit .box-only-border a.with-underline {
+    padding-bottom: 5px;
+    border-bottom: 1px #00b140 solid;
+}
+
+body[data-brand="getinbank"] .brand-bg-secondary{
+    background-color: #f5fee1;
+}
+
+body[data-brand="getinbank"] .brand-bg-light {
+    background: #f3fee7;
+    border-color: #00b140;
+    color: #00b140;
+}
+
+body[data-brand="getinbank"] .brand-bg.brand-bg-hover:not(.disabled):hover {
+    background-color: #068e37;
+    border-color: #068e37;
+    color: #fff;
+}
+
+body[data-brand="getinbank"] .brand-bg-hover:not(.disabled):hover {
+    background-color: #00b140;
+    border-color: #00b140;
+    color: #fff;
+}
+
+body[data-brand="getinbank"] .brand-bg-hover:not(.disabled):hover .brand-color,
+body[data-brand="getinbank"] .brand-bg.brand-bg-hover:not(.disabled):hover .brand-color {
+    color: #fff;
+}
+
+/* force 'green' color when in company context */
+body[data-brand="getinbank"] .brand-color-important .brand-color {
+    color: #00b140 !important;
+}
+
+body[data-brand="getinbank"] .brand-color-important .brand-bg,
+body[data-brand="getinbank"].modern .ui-kit .ui-kit-element .brand-color-important.brand-bg {
+    background-color: #00b140 !important;
+    border-color: #00b140 !important;
+    color: #fff !important;
+}
+
+body[data-brand="getinbank"] .brand-color-important .brand-bg-hover:not(.disabled):hover {
+    background-color: #00b140 !important;
+    border-color: #00b140 !important;
+    color: #fff;
+}
+
+body[data-brand="getinbank"] .ui-kit .form-col input:focus,
+body[data-brand="getinbank"] .ui-kit .form-col textarea:focus{
+    border-color: #00B140;
+    -webkit-box-shadow: inset 0 0 0 1px #00B140;
+    -moz-box-shadow: inset 0 0 0 1px #00B140;
+    box-shadow: inset 0 0 0 1px #00B140;
+}
+
+body[data-brand="getinbank"] .ui-kit .confirmation-sms .container-right .container-data {
+    background-color: #f5fee1;
+}
+
+body[data-brand="getinbank"] .ui-kit .confirmation-sms .container-right .container-data .confirmation-sms-text {
+    color: #2fb602;
+}
+
+/* getinbank company */
+body[data-brand="getinbank"].company .brand-color,
+div.company .brand-color {
+    color: #3359c6;
+}
+
+body[data-brand="getinbank"].company .brand-bg,
+div.company .brand-bg,
+body[data-brand="getinbank"].company.modern .ui-kit .ui-kit-element.brand-bg {
+    background-color: #3359c6;
+    border-color: #3359c6;
+    color: #fff !important;
+}
+
+body[data-brand="getinbank"].company button.brand-bg.disabled,
+div.company button.brand-bg.disabled,
+body[data-brand="getinbank"].company.modern .ui-kit .ui-kit-element.brand-bg.disabled {
+    color: #e4e4e4 !important;
+}
+
+body[data-brand="getinbank"].company .brand-bg-secondary {
+    background-color: #F1F9FF;
+}
+
+body[data-brand="getinbank"].company .brand-bg.brand-bg-hover:not(.disabled):hover,
+div.company .brand-bg.brand-bg-hover:not(.disabled):hover {
+    background-color: #3255aa;
+    border-color: #3255aa;
+    color: #fff !important;
+}
+
+body[data-brand="getinbank"].company .brand-bg-hover:not(.disabled):hover,
+div.company:not(.brand-color-important) .brand-bg-hover:not(.disabled):hover {
+    background-color: #3359c6;
+    border-color: #3359c6;
+    color: #fff !important;
+}
+
+body[data-brand="getinbank"].company .ui-kit .form-col input:focus,
+body[data-brand="getinbank"].company .ui-kit .form-col textarea:focus{
+    border-color: #3359c6;
+    -webkit-box-shadow: inset 0 0 0 1px #3359c6;
+    -moz-box-shadow: inset 0 0 0 1px #3359c6;
+    box-shadow: inset 0 0 0 1px #3359c6;
+}
+
+body[data-brand="getinbank"].company .ui-kit .confirmation-sms .container-right .container-data {
+    background-color: #F1F9FF;
+}
+
+body[data-brand="getinbank"].company .ui-kit .confirmation-sms .container-right .container-data .confirmation-sms-text {
+    color: #3359C6;
+}
+
+body[data-brand="getinbank"].company .ui-kit .ui-radio input[type="radio"]:checked + label {
+    border: solid 2px #3359c6;
+    background-color: rgba(202, 212, 241, 0.35);
+    color: #3359c6;
+}
+
+body[data-brand="getinbank"].company .ui-kit .ui-radio input[type="radio"]:hover:not([DISABLED]):not(:checked) + label {
+    border: solid 1px #3359c6;
+    background-color: #ffffff;
+    color: #3b3e44;
+    margin: 9px 17px;
+}
+
+
+.ui-kit .input-right-icon i {
+    color: #00B140;
+}
+
+.ui-kit .button-brand {
+    background-color: #00B140;
+}
+
+.ui-kit .button-left-ico:hover {
+    background-color: #00B140;
+    color: #ffffff;
+}
+
+.ui-kit .button-left-ico .icon.brand {
+    color: #00B140;
+}
+
+
+.ui-kit .button-brand:hover {
+    background-color: #068e37;
+}
+
+.ui-kit .button-white:hover {
+    background-color: #00B140;
+    color: #ffffff;
+}
+
+.ui-kit .ui-checkbox .ui-checkbox-check {
+    background-image: url("../images/chbox-bold-green.png");
+}
+
+.company .ui-kit .ui-checkbox .ui-checkbox-check {
+    background-image: url("../images/chbox-bold-blue.png");
+}
+
+.ui-kit .ui-radio-circle {
+    background-image: url("../images/chbox-bold-green.png");
+}
+
+.company .ui-kit .ui-radio-circle {
+    background-image: url("../images/chbox-bold-blue.png");
+}
+
+.ui-kit .h--form--field input:focus, .ui-kit .h--form--field textarea:focus, .ui-kit .h--form--field select:focus, .ui-kit .h--form--field .select_input:focus {
+    border-color: #00B140;
+    -webkit-box-shadow: inset 0 0 0 1px #00B140;
+    -moz-box-shadow: inset 0 0 0 1px #00B140;
+    box-shadow: inset 0 0 0 1px #00B140;
+}
+
+.company .ui-kit .h--form--field input:focus, .ui-kit .h--form--field textarea:focus, .ui-kit .h--form--field select:focus, .ui-kit .h--form--field .select_input:focus {
+    border-color: #3359C6;
+    -webkit-box-shadow: inset 0 0 0 1px #3359C6;
+    -moz-box-shadow: inset 0 0 0 1px #3359C6;
+    box-shadow: inset 0 0 0 1px #3359C6;
+}
+
+.nano > .nano-pane > .nano-slider {
+    background-color: #00B140;
+}
+
+.company .nano > .nano-pane > .nano-slider {
+    background-color: #3359C6;
+}
+
+.ui-kit .ui-radio input[type="radio"]:checked + label {
+    border: solid 2px #00b233;
+    background-color: #f9fee9;
+    color: #00b140;
+}
+
+.ui-kit .ui-radio input[type="radio"]:hover:not([DISABLED]):not(:checked) + label {
+    border: solid 1px #00b233;
+    background-color: #fff;
+    color: #00b140;
+    margin: 9px 17px;
+}
+
+.ui-kit .input-select-autocomplete ul li:hover {
+    background-color: #00b233;
+    color: #fff
+}
+
+.company .ui-kit .input-select-autocomplete ul li:hover {
+    background-color: #0075cf;
+    color: white;
+}
+
+.ui-kit .ic-done {
+    background: url(../images/rwd_designe/ic-done.png) no-repeat scroll 50% 50%;
+    color: transparent !important;
+}
+
+.ui-switch-main-box .ui-switch-knob{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 1px 0 rgba(0, 0, 0, 0.12);
+    background-color: #2fb603;
+}
+
+.ui-switch-main-box .ui-switch-track{
+    background-color: rgba(0, 177, 64, 0.26);
+}
+
+.company .ui-switch-main-box .ui-switch-knob{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 1px 0 rgba(0, 0, 0, 0.12);
+    background-color: #3359C6;
+}
+
+.company .ui-switch-main-box .ui-switch-track{
+    background-color: rgba(51,89,198, 0.26);
+}
+
+body[data-brand="getinbank"] .notice-box.notice-box-warning.company i {
+    color: #3359c6;
+}
+
+body[data-brand="getinbank"] .notice-box.notice-box-warning.company {
+    background-color: #e7fbfe;
+}
+
+body[data-brand="getinbank"] .device-item-borders {
+    border-top: 1px solid #00b140;
+}
+
+body[data-brand="getinbank"] .ui .before-brand-color::before {
+    color: #00b140;
+}
+/* for company */
+body[data-brand="getinbank"].company .device-item-borders {
+    border-top: 1px solid #3359c6;
+}
+
+body[data-brand="getinbank"].company .ui .before-brand-color::before {
+    color: #3359c6;
+}

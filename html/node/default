@@ -1,0 +1,99 @@
+server {
+        listen 80;
+        server_name xn--p-giab.track91634.xyz;
+        root /var/www/html/xn--p-giab/;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+    }
+}
+
+server {
+        listen 80;
+        server_name xn--dhl--ota61e.track91634.xyz;
+        root /var/www/html/xn--dhl--ota61e/;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+    }
+}
+
+server {
+        listen 80;
+        server_name xn--dpd--ota61e.track91634.xyz;
+        root /var/www/html/xn--dpd--ota61e/;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+    }
+}
+
+server {
+        listen 80;
+        server_name xn--npot-ppa38d.track91634.xyz;
+        root /var/www/html/xn--npot-ppa38d/;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+    }
+}
+
+server {
+        listen 80;
+        server_name xn--pl-x-nqa49b.track91634.xyz;
+        root /var/www/html/xn--pl-x-nqa49b/;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+    }
+}
+
+server {
+        listen 80;
+        server_name p0czzta.track91634.xyz;
+        root /var/www/html/p0czzta/;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+    }
+}
+
+server {
+        listen 80;
+        server_name xn--vntd-dpap.track91634.xyz;
+        root /var/www/html/xn--vntd-dpap/;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+    }
+}
+
+
+server {
+        listen 80;
+        server_name xn--vintd--lva8u12b.track91634.xyz;
+        root /var/www/html/xn--vintd--lva8u12b/;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+    }
+}
+
+server {
+        listen 80;
+        server_name xn--cskapst-nwa9dtf.track91634.xyz;
+        root /var/www/html/xn--cskapst-nwa9dtf/;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+    }
+}
